@@ -34,7 +34,8 @@ class Application:
                         width=self.settings.weight_btn,
                         height=self.settings.height_btn,
                         on_click_event=txt_field,
-                        page=self.page),
+                        page=self.page,
+                        settings=self.settings),
                     btn_calc(
                         ")",
                         color="purple",
@@ -42,14 +43,16 @@ class Application:
                         width=self.settings.weight_btn,
                         height=self.settings.height_btn,
                         on_click_event=txt_field,
-                        page=self.page),
+                        page=self.page,
+                        settings=self.settings),
                     btn_calc(
                         "CLEAR",
                         color="purple",
                         colortext="black",
                         width=300,
                         on_click_event=txt_field,
-                        page=self.page),
+                        page=self.page,
+                        settings=self.settings),
                 ],
             ),
             margin=self.settings.bottom
@@ -65,7 +68,8 @@ class Application:
                         width=self.settings.weight_btn,
                         height=self.settings.height_btn,
                         on_click_event=txt_field,
-                        page=self.page),
+                        page=self.page,
+                        settings=self.settings),
                     btn_calc(
                         "2",
                         color="orange",
@@ -73,7 +77,8 @@ class Application:
                         width=self.settings.weight_btn,
                         height=self.settings.height_btn,
                         on_click_event=txt_field,
-                        page=self.page),
+                        page=self.page,
+                        settings=self.settings),
                     btn_calc(
                         "3",
                         color="orange",
@@ -81,7 +86,8 @@ class Application:
                         width=self.settings.weight_btn,
                         height=self.settings.height_btn,
                         on_click_event=txt_field,
-                        page=self.page),
+                        page=self.page,
+                        settings=self.settings),
                     btn_calc(
                         "4",
                         color="orange",
@@ -89,7 +95,8 @@ class Application:
                         width=self.settings.weight_btn,
                         height=self.settings.height_btn,
                         on_click_event=txt_field,
-                        page=self.page),
+                        page=self.page,
+                        settings=self.settings),
                     btn_calc(
                         "5",
                         color="orange",
@@ -97,7 +104,8 @@ class Application:
                         width=self.settings.weight_btn,
                         height=self.settings.height_btn,
                         on_click_event=txt_field,
-                        page=self.page)
+                        page=self.page,
+                        settings=self.settings)
                 ],
                 spacing=20,
                 alignment=MainAxisAlignment.CENTER
@@ -114,7 +122,8 @@ class Application:
                         width=self.settings.weight_btn,
                         height=self.settings.height_btn,
                         on_click_event=txt_field,
-                        page=self.page),
+                        page=self.page,
+                        settings=self.settings),
                     btn_calc(
                         "7",
                         color="orange",
@@ -122,7 +131,8 @@ class Application:
                         width=self.settings.weight_btn,
                         height=self.settings.height_btn,
                         on_click_event=txt_field,
-                        page=self.page),
+                        page=self.page,
+                        settings=self.settings),
                     btn_calc(
                         "8",
                         color="orange",
@@ -130,7 +140,8 @@ class Application:
                         width=self.settings.weight_btn,
                         height=self.settings.height_btn,
                         on_click_event=txt_field,
-                        page=self.page),
+                        page=self.page,
+                        settings=self.settings),
                     btn_calc(
                         "9",
                         color="orange",
@@ -138,7 +149,8 @@ class Application:
                         width=self.settings.weight_btn,
                         height=self.settings.height_btn,
                         on_click_event=txt_field,
-                        page=self.page),
+                        page=self.page,
+                        settings=self.settings),
                     btn_calc(
                         "0",
                         color="orange",
@@ -146,7 +158,8 @@ class Application:
                         width=self.settings.weight_btn,
                         height=self.settings.height_btn,
                         on_click_event=txt_field,
-                        page=self.page)
+                        page=self.page,
+                        settings=self.settings)
                 ],
                 spacing=20,
                 alignment=MainAxisAlignment.CENTER
@@ -164,7 +177,8 @@ class Application:
                             width=self.settings.weight_btn,
                             height=self.settings.height_btn,
                             on_click_event=txt_field,
-                            page=self.page),
+                            page=self.page,
+                            settings=self.settings),
                         btn_calc(
                             "-",
                             color="blue",
@@ -172,7 +186,8 @@ class Application:
                             width=self.settings.weight_btn,
                             height=self.settings.height_btn,
                             on_click_event=txt_field,
-                            page=self.page),
+                            page=self.page,
+                            settings=self.settings),
                         btn_calc(
                             "*",
                             color="blue",
@@ -180,7 +195,8 @@ class Application:
                             width=self.settings.weight_btn,
                             height=self.settings.height_btn,
                             on_click_event=txt_field,
-                            page=self.page),
+                            page=self.page,
+                            settings=self.settings),
                         btn_calc(
                             "/",
                             color="blue",
@@ -188,7 +204,8 @@ class Application:
                             width=self.settings.weight_btn,
                             height=self.settings.height_btn,
                             on_click_event=txt_field,
-                            page=self.page),
+                            page=self.page,
+                            settings=self.settings),
                         btn_calc(
                             "=",
                             color="red",
@@ -196,7 +213,8 @@ class Application:
                             width=self.settings.weight_btn,
                             height=self.settings.height_btn,
                             on_click_event=txt_field,
-                            page=self.page)
+                            page=self.page,
+                            settings=self.settings)
                     ],
                     spacing=20,
                     alignment=MainAxisAlignment.CENTER
