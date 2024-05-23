@@ -26,46 +26,56 @@ class Application:
         header_app = Container(
             Row(
                 controls=[
-                    btn_calc("(", color="purple", colortext="black", width=80),
-                    btn_calc(")", color="purple", colortext="black", width=80),
-                    btn_calc("CLEAR", color="purple", colortext="black", width=200),
+                    btn_calc("(", color="purple", colortext="black", width=self.settings.weight_btn, height=self.settings.height_btn),
+                    btn_calc(")", color="purple", colortext="black", width=self.settings.weight_btn, height=self.settings.height_btn),
+                    btn_calc("CLEAR", color="purple", colortext="black", width=300),
                 ],
             ),
+            margin=self.settings.bottom
         )
 
+        row_btn_1 = Container(
+            Row(
+                controls=[
+                    btn_calc("1", color="orange", colortext="black", width=self.settings.weight_btn, height=self.settings.height_btn),
+                    btn_calc("2", color="orange", colortext="black", width=self.settings.weight_btn, height=self.settings.height_btn),
+                    btn_calc("3", color="orange", colortext="black", width=self.settings.weight_btn, height=self.settings.height_btn),
+                    btn_calc("4", color="orange", colortext="black", width=self.settings.weight_btn, height=self.settings.height_btn),
+                    btn_calc("5", color="orange", colortext="black", width=self.settings.weight_btn, height=self.settings.height_btn)
+                ],
+                spacing=20,
+                alignment=MainAxisAlignment.CENTER
+            ),
+            margin=self.settings.bottom
+        )
+        row_btn_2 = Container(
+            Row(
+                controls=[
+                    btn_calc("6", color="orange", colortext="black", width=self.settings.weight_btn, height=self.settings.height_btn),
+                    btn_calc("7", color="orange", colortext="black", width=self.settings.weight_btn, height=self.settings.height_btn),
+                    btn_calc("8", color="orange", colortext="black", width=self.settings.weight_btn, height=self.settings.height_btn),
+                    btn_calc("9", color="orange", colortext="black", width=self.settings.weight_btn, height=self.settings.height_btn),
+                    btn_calc("0", color="orange", colortext="black", width=self.settings.weight_btn, height=self.settings.height_btn)
+                ],
+                spacing=20,
+                alignment=MainAxisAlignment.CENTER
+            ),
+            margin=self.settings.bottom
+        )
 
-        row_btn_1 = Row(
-            controls=[
-                btn_calc("1", color="orange", colortext="black"),
-                btn_calc("2", color="orange", colortext="black"),
-                btn_calc("3", color="orange", colortext="black"),
-                btn_calc("4", color="orange", colortext="black"),
-                btn_calc("5", color="orange", colortext="black")
-            ],
-            spacing=20,
-            alignment=MainAxisAlignment.CENTER
-        )
-        row_btn_2 = Row(
-            controls=[
-                btn_calc("6", color="orange", colortext="black"),
-                btn_calc("7", color="orange", colortext="black"),
-                btn_calc("8", color="orange", colortext="black"),
-                btn_calc("9", color="orange", colortext="black"),
-                btn_calc("0", color="orange", colortext="black")
-            ],
-            spacing=20,
-            alignment=MainAxisAlignment.CENTER
-        )
-        row_btn_3 = Row(
-            controls=[
-                btn_calc("+", color="blue", colortext="black"),
-                btn_calc("-", color="blue", colortext="black"),
-                btn_calc("*", color="blue", colortext="black"),
-                btn_calc("/", color="blue", colortext="black"),
-                btn_calc("=", color="red", colortext="black")
-            ],
-            spacing=20,
-            alignment=MainAxisAlignment.CENTER
+        row_btn_3 = Container(
+                Row(
+                    controls=[
+                        btn_calc("+", color="blue", colortext="black", width=self.settings.weight_btn, height=self.settings.height_btn),
+                        btn_calc("-", color="blue", colortext="black", width=self.settings.weight_btn, height=self.settings.height_btn),
+                        btn_calc("*", color="blue", colortext="black", width=self.settings.weight_btn, height=self.settings.height_btn),
+                        btn_calc("/", color="blue", colortext="black", width=self.settings.weight_btn, height=self.settings.height_btn),
+                        btn_calc("=", color="red", colortext="black", width=self.settings.weight_btn, height=self.settings.height_btn)
+                    ],
+                    spacing=20,
+                    alignment=MainAxisAlignment.CENTER
+                ),
+                margin=self.settings.bottom
         )
 
         self.page.add(text_result(label=self.settings.text_field_w_label, w=self.settings.text_field_w_size))
@@ -77,6 +87,7 @@ class Application:
     def start_application(self):
         self.set_components()
         self.update()
+
 
 if __name__ == "__main__":
     calc_app: app = app(target=Application)
